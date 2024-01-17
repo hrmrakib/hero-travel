@@ -24,6 +24,7 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <a href="" class="mobile-menu"><i class="fa-solid fa-bars"></i></a>
             </nav>
         </header>
 
@@ -39,9 +40,22 @@
 
                     <div class="filter">
                         <input type="text" placeholder="Where go">
-                        <input type="" placeholder="When">
-                        <input type="number" placeholder="Select Type">
-                        <input type="button" class="search" placeholder="Where to" value="Find Now">
+                        <select id="when" name="when">
+                            <option value="none" selected>When</option>
+                            <option value="morning">Morning</option>
+                            <option value="evening">Evening</option>
+                            <option value="night">Night</option>
+                        </select>
+                        <select id="which-type" name="which">
+                            <option value="none" class="abc" selected>Choose Type</option>
+                            <option value="first">First Class</option>
+                            <option value="second">Second Class</option>
+                            <option value="third">Third Class</option>
+                        </select>
+                        <button class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Find Now
+                        </button>
                     </div>
                 </div>
             </section>
@@ -137,7 +151,7 @@
                             sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
                     </div>
                 </div>
-                <div class="card single-one">
+                <div class="single-one">
                     <img src="./images/best-price.jpeg" alt="">
                     <h3>Best Price Guarantee</h3>
                     <p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo
@@ -169,6 +183,53 @@
                 </div>
             </section>
 
+            <section class="review-area">
+                <h2>Client Review</h2>
+                <p>Our top clients says about our overall services.</p>
+
+                <div class="reviews">
+                    <div class="review">
+                        <img src="./images/p1.jpeg" alt="">
+                        <h3>Laus Fiomaon</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>The staff was great. The receptionists were very helpful and answered all our questions. The
+                            room was clean and bright, and the room service was always on time.</p>
+                    </div>
+                    <div class="review">
+                        <img src="./images/p2.jpeg" alt="">
+                        <h3>Fail Monso</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>I recently had the pleasure of staying at [HotelName], and it was an unforgettable
+                            experience. From the moment I arrived, the staff went above and beyond.</p>
+                    </div>
+                    <div class="review">
+                        <img src="./images/p3.jpeg" alt="">
+                        <h3>Josef Toispal</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>My stay at Wabei was nothing short of spectacular. The hotel’s elegant design, combined
+                            with
+                            its top-notch amenities, made for a truly relaxing and enjoyable experience.</p>
+                    </div>
+                </div>
+            </section>
 
             <section class="news-letter">
                 <div class="letter-left">

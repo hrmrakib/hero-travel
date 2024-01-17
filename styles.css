@@ -53,7 +53,12 @@ a {
 .navbar ul li .active {
   color: #ff5400;
 }
-
+.mobile-menu {
+  display: none;
+}
+.mobile-menu i {
+  font-size: 26px;
+}
 /* hero area */
 
 .hero-area {
@@ -87,7 +92,7 @@ a {
 }
 .hero-content p {
   color: #fff;
-  width: 676px;
+  max-width: 676px;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -101,16 +106,24 @@ a {
   padding: 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  justify-content: center;
+  gap: 20px 10px;
 }
-.filter input {
-  height: 35px;
+.filter input,
+select,
+button {
+  height: 52px;
   border-radius: 8px;
   padding: 0 10px;
   border: none;
   outline: none;
 }
+
 .filter .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
   color: #fff;
   background-color: #ff5400;
   cursor: pointer;
@@ -342,9 +355,28 @@ p {
 
 .single-one {
   max-width: 50%;
+  border-radius: 8px;
+  padding: 25px;
   margin: 30px auto;
   border: 1px solid rgba(233, 68, 68, 0.2) !important;
   background: rgba(233, 68, 68, 0.05) !important;
+}
+.single-one img {
+  width: 60px;
+  height: 60px;
+}
+.single-one h3 {
+  color: #131318;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 800;
+}
+.single-one p {
+  color: #5a5a5d;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 /*  */
@@ -407,6 +439,69 @@ p {
   font-size: 17px;
   border: none;
   margin-top: 40px;
+}
+
+/* reviews-area */
+.review-area {
+  margin-bottom: 90px;
+}
+.review-area h2 {
+  color: #131318;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+  line-height: 60px;
+  margin-bottom: 12px;
+}
+
+.review-area p {
+  color: #5a5a5d;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 45px;
+}
+.reviews {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+.review {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition-duration: 360ms;
+}
+.review:hover {
+  transform: translateY(-20px);
+}
+.review img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.review h3 {
+  color: #131318;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.review .rating {
+  margin-bottom: 12px;
+}
+.review .rating i {
+  color: rgb(242, 137, 25);
+}
+.review p {
+  color: #5a5a5d;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 /* news letter */
@@ -516,5 +611,125 @@ footer {
 footer hr {
   max-width: 45%;
   margin: 20px auto;
-  background-color: #2020d5;
+}
+
+/* mobile responsive code */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .logo {
+    gap: 5px;
+    font-size: 23px;
+  }
+  .logo img {
+    width: 35px;
+  }
+  .logo span {
+    font-size: 23px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .hero-area {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 22px;
+  }
+  .filter {
+    grid-template-columns: 1fr;
+  }
+  .popular {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .popular-right {
+    height: 322px;
+  }
+  .popular p {
+    text-align: left;
+  }
+  .row-1 {
+    grid-template-columns: 1fr;
+  }
+  .row-2 {
+    grid-template-columns: 1fr;
+  }
+  .row-3 {
+    grid-template-columns: 1fr;
+  }
+  .choose h2 {
+    font-size: 20px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .choose {
+    margin-bottom: 60px;
+  }
+  .maldives,
+  .indonesia,
+  .srilanka,
+  .north-america,
+  .kashmir,
+  .bangladesh,
+  .bandarban {
+    height: 200px;
+  }
+  .single-one {
+    max-width: 100%;
+  }
+  .overview {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+  .overview-left h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .popular-left h2 {
+    font-size: 20px;
+  }
+  .choose-us h2 {
+    font-size: 20px;
+  }
+  .review-area h2 {
+    font-size: 20px;
+  }
+  .watch-mountain {
+    height: 250px;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  .news-letter {
+    grid-template-columns: 1fr;
+  }
+  .letter-right {
+    height: 300px;
+  }
+  .discount {
+    right: 2px;
+    bottom: 28px;
+    width: 200px;
+    height: 75px;
+  }
+  .discount h2 {
+    font-size: 20px;
+  }
+  .footer-content .logo {
+    margin-bottom: 14px;
+  }
+  .footer-para {
+    padding: 2px 22px;
+  }
 }
