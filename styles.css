@@ -19,6 +19,7 @@ a {
 }
 
 /* navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,7 @@ a {
 .mobile-menu i {
   font-size: 26px;
 }
+
 /* hero area */
 
 .hero-area {
@@ -131,6 +133,7 @@ button {
 }
 
 /* popular */
+
 .popular {
   display: flex;
   justify-content: space-between;
@@ -173,7 +176,6 @@ button {
   font-weight: 400;
   line-height: 26px;
 }
-
 .read-more-btn {
   background-color: #ff5400;
   color: #fff;
@@ -194,6 +196,7 @@ button {
 }
 
 /* choose */
+
 .choose {
   margin-bottom: 90px;
 }
@@ -293,6 +296,7 @@ p {
 }
 
 /* why choose us */
+
 .choose-us {
   margin-bottom: 90px;
 }
@@ -379,7 +383,8 @@ p {
   line-height: 26px;
 }
 
-/*  */
+/* Overview */
+
 .overview {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -442,6 +447,7 @@ p {
 }
 
 /* reviews-area */
+
 .review-area {
   margin-bottom: 90px;
 }
@@ -505,6 +511,7 @@ p {
 }
 
 /* news letter */
+
 .news-letter {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -577,6 +584,7 @@ p {
 }
 
 /* footer */
+
 footer {
   padding: 80px 0;
   background: rgba(19, 19, 24, 0.05);
@@ -613,7 +621,8 @@ footer hr {
   margin: 20px auto;
 }
 
-/* mobile responsive code */
+/* mobile responsive code (max-width: 600px) */
+
 @media screen and (max-width: 600px) {
   .container {
     width: 92%;
