@@ -335,15 +335,15 @@ p {
   padding: 0 50px;
 }
 .discount-card1 {
-  background-image: url("./images/group39.png");
   justify-content: flex-end;
+  background-image: url("./images/group39.png");
 }
 .discount-card2 {
   background-image: url("./images/group40.png");
 }
 .discount-card3 {
-  background-image: url("./images/group39.png");
   justify-content: flex-end;
+  background-image: url("./images/group39.png");
 }
 .card-content {
   max-width: 579px;
