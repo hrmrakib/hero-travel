@@ -269,7 +269,7 @@ p {
   background-image: url("./images/rectangle82.png");
 }
 .srilanka {
-  background-image: url("./images//rectangle6.png");
+  background-image: url("./images/rectangle6.png");
 }
 .north-america {
   background-image: url("./images/rectangle7.png");
@@ -296,7 +296,103 @@ p {
   background-size: cover;
 }
 
-/* why choose us */
+/* deals and discount */
+
+.deal-discount {
+  margin-bottom: 90px;
+}
+.deal-discount h2 {
+  color: #131318;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.deal-discount .desc {
+  max-width: 643px;
+  margin: 0 auto;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 60px;
+}
+.discount-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.discount-card1,
+.discount-card2,
+.discount-card3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+.discount-card1 {
+  background-image: url("./images/group39.png");
+  justify-content: flex-end;
+}
+.discount-card2 {
+  background-image: url("./images/group40.png");
+}
+.discount-card3 {
+  background-image: url("./images/group39.png");
+  justify-content: flex-end;
+}
+.card-content {
+  max-width: 579px;
+  height: 389px;
+  padding: 40px 70px 50px 30px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.card-content h2 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 25px;
+}
+.card-content h2,
+p {
+  text-align: left;
+}
+.card-content .price {
+  color: #ff5400;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 26px 0;
+}
+.card-content button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #ff5400;
+  padding: 14px 20px;
+}
+.date-time {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.date-time span {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+}
+.date-time i {
+  color: #ff5400;
+}
+
+/* choose-us */
 
 .choose-us {
   margin-bottom: 90px;
@@ -621,6 +717,9 @@ footer hr {
   max-width: 45%;
   margin: 20px auto;
 }
+.copy-right {
+  text-align: center;
+}
 
 /* mobile responsive code (max-width: 600px) */
 
@@ -708,6 +807,47 @@ footer hr {
   }
   .popular-left h2 {
     font-size: 20px;
+  }
+  .deal-discount h2 {
+    font-size: 20px;
+  }
+  .card-content {
+    width: 70%;
+    height: fit-content;
+    padding: 8px 10px;
+  }
+  .date-time {
+    gap: 2px;
+  }
+  .card-content .price {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .card-content h2 {
+    margin: 6px 0;
+  }
+  .discount-card1,
+  .discount-card2,
+  .discount-card3 {
+    padding: 5px;
+  }
+  .discount-card1 {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .discount-card2 {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .discount-card3 {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .card-content button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 8px;
+    height: 35px;
   }
   .choose-us h2 {
     font-size: 20px;
